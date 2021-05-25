@@ -10,7 +10,7 @@ tags = [HASHTAG_RELEASE, HASHTAG_HIDE_CHANGELOG]
 
 def filter_out_tags(commit):
     for tag in tags:
-        commit.replace(tag, "")
+        commit = commit.replace(tag, "")
     return commit
 
 if __name__ == '__main__':
